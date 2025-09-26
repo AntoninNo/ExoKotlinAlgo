@@ -19,8 +19,14 @@ import _10_Demos_et_tests.testerEnLot
  */
 
 fun findFirstValue(value: Number, list: List<Number>): Int {
-    // A COMPLETER ICI
-    return -1
+    var verif = -1
+    list.forEachIndexed { index, element ->
+        if(element == value){
+            verif = index
+            return verif
+        }
+    }
+    return verif
 }
 
 
