@@ -1,4 +1,4 @@
-# SUJET 03 : Manipulation de listes
+ # SUJET 03 : Manipulation de listes
 
 ## Présentation générale :
 Cette partie propose des problèmes qui appliquent des manipulations comme des permutations de valeurs dans des listes.

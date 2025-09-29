@@ -21,7 +21,23 @@ fun triParSelection(liste: List<Int>): MutableList<Int> {
     val listeCopie = liste.toMutableList()
 
     // Algorithme de tri :
-    // A COMPLETER ICI
+    var i = 0
+    while(i<=listeCopie.lastIndex-1){
+        var jMini = i
+        var j = i + 1
+        while(j <= listeCopie.lastIndex){
+            if(listeCopie[j] < listeCopie[jMini]){
+                jMini = j
+            }
+            j++
+        }
+        if(jMini != i){
+            var temp = listeCopie[i]
+            listeCopie[i] = listeCopie[jMini]
+            listeCopie[jMini] = temp
+        }
+        i++
+    }
 
     return listeCopie
 }

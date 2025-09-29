@@ -18,8 +18,14 @@ import _10_Demos_et_tests.testerEnLot
 
 fun mapDesOccurrences(liste: List<Int>): Map<Int, Int> {
     val resultat = mutableMapOf<Int, Int>()
+    liste.forEach{ value ->
+        if(value in resultat){
+            resultat[value] = resultat[value]!! + 1
+        } else {
+            resultat[value] = 1
+        }
+    }
 
-    // A COMPLETER ICI
 
     return resultat
 }
